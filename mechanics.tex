@@ -1,0 +1,81 @@
+\documentclass[a4paper]{book} %{article}
+
+\usepackage{fullpage} % Package to use full page
+\usepackage{parskip} % Package to tweak paragraph skipping
+\usepackage{tikz} % Package for drawing
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[numbered]{bookmark} % For numbering of challenges in bookmark pane of PDF viewer
+\def\UrlBreaks{\do\/\do-}
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{datetime} % Time
+\usepackage[UKenglish]{isodate}
+\usepackage{ctable} % Thick table lines
+\usepackage{booktabs} % Merge cells with multicolumn
+\usepackage{bm} % Bold-maths \bm command
+
+\newcommand{\disctime}{13:00 to 14:30 }
+\newcommand{\discdays}{Mondays }
+\newcommand{\discroom}{W4-766}
+%\newcommand{\discexam}{10th February 2017}
+\newcommand{\course}{Mechanics }
+\newcommand{\courseurl}{mechanics}
+\newcommand{\nensei}{2nd}
+
+\newcommand{\lap}[1]{\mathcal{L}\{#1\}}
+
+\newcommand{\six}[1]{\SI[parse-numbers=false]{X}{#1}}
+\newcommand{\hash}[2]{MD5(#1\_X) = #2\ldots}
+\newcommand{\com}[1]{\overline{#1}}
+
+\graphicspath{{Images/}}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+
+        \Huge
+        \textbf{Mechanics}
+
+        Spring 2017
+
+        \vspace{1.5cm}
+        \Large
+        Last updated:\\\today \ at \currenttime
+
+        \vspace{4.0cm}
+        \LARGE
+        James Cannon\\Kyushu University
+        \vfill
+
+        \normalsize
+        \url{http://www.jamescannon.net/teaching/\courseurl}\\
+        \vspace{0.3cm}
+        \small
+        \url{http://raw.githubusercontent.com/NanoScaleDesign/Mechanics/master/mechanics.pdf}
+        \vspace{0.5cm}
+
+        License: \emph{CC BY-NC 4.0}.
+
+    \end{center}
+\end{titlepage}
+
+\setcounter{chapter}{-1}
+
+\tableofcontents
+
+\chapter{Course information}
+\newpage
+\input{instructions}
+\input{timetable}
+
+\chapter{Kinetics of systems of particles}
+\input{particlesystems}
+
+\end{document}

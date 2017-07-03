@@ -195,7 +195,7 @@ Question 7/4
 \end{itemize}
 
 \emph{Correction to book: Figure 7/9 should read $\bm{\alpha} = \bm{\dot{\omega}} = \bm{\Omega} \bm{\times} \bm{\omega}$ (not $\bm{\Omega} \bm{\times} \bm{r}$)}
-% TODO: Calrify that r has components in all 3 axes and mark r on the diagram
+
 \subsection*{Challenge}
 Considering vector $\bm{r}$ in the figure below, if the angles $\alpha = 45$ degrees and $\beta = 30$ degrees, write the unit vector $\bm{\hat{r}}$ in terms of the Cartesian unit vectors.
 
@@ -237,8 +237,9 @@ Work through sample problem 7/1, parts (a) and (b) only.
 
 
 
+% NT: Add something about LH and RH systems
 \newpage
-\section{Simultanious rotation III}
+\section{Simultaneous rotation III}
 
 \subsection*{Resources}
 \begin{itemize}
@@ -259,6 +260,11 @@ $\frac{-\pi^2}{8}(25 \hat{j} + 18 \hat{k})$ \si{\meter\per\second}
 
 \newpage
 \section{Time-dependent rotation of vectors I}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book section 5/7
+\end{itemize}
 
 \subsection*{Comment}
 A vector $\bm{r}$ may be split into its magnitude and scaler components like $\bm{r} = r_i \bm{\hat{i}} + r_j \bm{\hat{j}} + r_k \bm{\hat{k}}$. For fixed co-ordinate systems, the direction of ($\bm{\hat{i}}$, $\bm{\hat{j}}$, $\bm{\hat{k}}$) does not vary with time, so the derivatives of the unit vectors are zero. For a rotating co-ordinate system however, the derivative chain rule must be used in order to take account of the changing directions of the unit vectors.
@@ -291,8 +297,99 @@ $\bm{\dot{\omega}} = (20 \pi - 6) \bm{\hat{i}} + 2 \bm{\hat{k}}$
 \newpage
 \section{Time-dependent rotation of vectors II}
 
+\subsection*{Resources}
+\begin{itemize}
+    \item Book section 5/7
+\end{itemize}
+
 \subsection*{Challenge}
 Answer question 7/27 in the book.
 
 \subsection*{Solution}
 Given in book.
+
+
+
+
+%\newpage
+%\section{Cross-product derivative} %NT: Move this earlier
+%
+%\subsection*{Challenge}
+%What is the derivative of $\bm{a}(t) \bm{\times} \bm{b}(t)$ with respect to $t$?
+%
+%\subsection*{Solution}
+%Please compare your answer with your partner and ask the teacher if you are unsure of your answer.
+
+
+
+
+\newpage
+\section{Relative velocity}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book section 7/6
+\end{itemize}
+
+\subsection*{Challenge}
+Consider a rotating rigid body with angular velocity $\omega=\hat{k}$. Two points, ``A'' and ``B'' are chosen on the rigid body. The book describes how it is possible to calculate the velocity of point ``A'' given the velocity of point ``B''. By calculating the velocity of point ``A'' in the 3 cases below, prove that the velocity of ``A'' can be calculated accurately irrespective of choice of the location of ``B''.
+
+\includegraphics[width=15cm]{rigid_body_vectors}
+
+a) $\bm{B} = \hat{k}$,              $\bm{A} = \hat{i} + \hat{k}$\\
+b) $\bm{B} = \hat{i} + \hat{k}$,    $\bm{A} = 2 \hat{i} + \hat{k}$\\
+c) $\bm{B} = \hat{i}$,              $\bm{A} = 2 \hat{i} + \hat{k}$
+
+\subsection*{Solution}
+You should be able to show that all 3 cases will result in the same value of $v_A$. If this is not the case, please discuss with your partner or the teacher.
+
+
+
+
+\newpage
+\section{Crank-style problem}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book section 7/6
+\end{itemize}
+
+\subsection*{Comment}
+The angular velocity of the link $\bar{AB}$ is, by definition, perpendicular to the axis of the link. In the second part of this challenge, you use this fact along with other obtained equations to obtain the 3 Cartesian directions of the angular velocity vector. Note that although the concept of the angular momentum of the link $\bar{AB}$ is used to calculate $w_2$ in the first part of the problem, you don't actually need to calculate the value of the $\bm{w_n}$ vector in order to determine the value of $w_2$.
+
+\subsection*{Challenge}
+Work through sample problem 7/3
+
+
+
+
+\newpage
+\section{Perpendicular position, velocity and rotation vectors}
+
+\subsection*{Challenge}
+Prove that $\bm{r}_{AB}$, $\bm{v}_{AB}$ and $\bm{\omega}_n$ in sample problem 7/3 are all perpendicular to each other.
+
+
+
+
+\newpage
+\section{Perpendicular double cross-product}
+
+\subsection*{Challenge}
+Considering a vector $\bm{a} = \hat{k}$ and a vector $\bm{b} = \hat{i}$, show that $\bm{a} \bm{\times} (\bm{a} \bm{\times} \bm{b}) = -a^2 \bm{b}$.
+
+
+
+
+\newpage
+\section{3D acceleration}
+
+\subsection*{Comment}
+In this sample problem the concept that $\bm{\dot{\omega}}_n$ is normal to $\bm{r}_{AB}$,
+%but not $\bm{v}_{AB}$,
+is included. ``A'' and ``B'' are part of a rigid body and therefore the separation between them is constant, even while the ijk components of $\bm{r}_{AB}$ vary with orientation of $\bm{r}_{AB}$. Despite this constant variation in orientation, angular velocity is always normal to $\bm{r}_{AB}$, by definition, because rotation parallel to $\bm{r}_{AB}$ has no influence on the motion of $\bar{AB}$. Any angular acceleration parallel to $\bm{r}_{AB}$ has no effect on the motion of $\hat{AB}$, and since the direction of $\bm{\omega}_n$ is always defined to be normal to $\bm{r}_{AB}$, the angular acceleration $\bm{\dot{\omega}}_n$ is also always normal to $\bm{r}_{AB}$.
+% So you can imagine $\bm{r}_{AB}$ spinning like the propellor of an aircraft engine (relative to the $\bm{w}_n$ vector). 
+%Consider a disc laying the x-y plane with the z-axis pointing up through the centre of the disc and the disc rotating with an angular velocity vector pointing directly up through the centre of the disk in the positive z-direction. Now tilt the disc so the angular velocity vector no-longer points along the z-axis, but instead precesses a vector of symettry with another angular velocity which points along the positive z-axis. The acceleration of the vector omega remains normal to the plane of the disc at all times so a point on the edge of the disc always has the same distance from the centre of the disc, however the instantanious velocity of the point on the disc depends on the precession of the vector omega.
+
+\subsection*{Challenge}
+Work through sample problem 7/4.

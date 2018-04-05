@@ -6,10 +6,60 @@
     \item Book sections 4/1 to 4/2
 \end{itemize}
 
+
+\subsection*{Comment}
+You may use the following text as an alternative explanation to that in the book.
+
+\subsubsection{Introduction}
+You are already largely familiar with the kinetics of a single particle.
+The idea of this short course is to extend these principles to the motion of a general system of particles.
+This will enable you to describe the motion of both rigid and non-rigid bodies and systems.
+
+A rigid body is defined as a solid system of particles where the distance between the particles does not change with respect to time.
+Examples of rigid-bodies are numerous, including many machines operating in the air, on land or under the sea, including rockets and spacecraft.
+A non-rigid body can come in two forms:
+\begin{itemize}
+    \item A single solid body that changes shape over time, perhaps due to elastic or non-elastic deformations.
+    \item A defined mass of liquid or gaseous particles flowing at a given rate. Important examples include air and fuel flowing through the turbine of an aircraft engine, the exhaust from the nozzle of a rocket, or water passing through a pump.
+\end{itemize}
+
+\subsubsection{Generalising Newton's 2nd law}
+Here we extend Newton's second law of motion to cover a general mass system, modelled by considering $n$ particles each with mass $m_i$ bounded by a closed surface in space:
+
+\includegraphics[width=8cm]{particle_system}
+
+The centre-of-mass of the system is denoted by the point $G$ and the distance of particle $i$ from the centre-of-mass is $\bm{\rho_i}$. The distance of particle $i$ from an arbitrary non-accelerating origin $O$ of a Newtonian set of reference axes is $\bm{r_i}$ and the distance of the centre-of-mass from this origin is $\bm{\bar{r}}$. Note that point $G$ does not have to correspond to the position of any one particle, and may just represent the position of the centre-of-mass of the particles at that particular instant.
+
+The total mass of the system $m$ is of course just sum of all the particle masses $m_i$:
+\begin{equation}
+    m = \sum{m_i}
+\end{equation}
+
+so that the centre-of-mass $G$ of the system can be determined from the position of all particles:
+\begin{equation}
+    m \bm{\bar{r}} = \sum m_i \bm{r}_i
+\end{equation}
+
+Each particular in the system is subject to forces. It is useful to group these forces into two contributions:
+\begin{itemize}
+    \item Sources internal to the system boundary (ie, other particles). For example, the force on particle $i$ by particle $j$.
+    \item Sources external to the system boundary (eg, electric fields, gravity, etc).
+\end{itemize}
+
+One can consider the total force acting on the system as a whole. Note that the force on on particle $i$ by particle $j$ is equal and opposite to the force on particle $j$ by particle $i$. Thus the sum of forces from internal forces must all cancel out to be zero. If there are multiple external forces $\bm{F}_i$ on the system, then the total force on the system must be $\sum\bm{F}$. Thus the equation of motion for the system can be written as
+\begin{equation}
+    \label{eqn:generalnewton}
+    \sum\bm{F} = m \bm{\bar{\ddot{r}}} = m \bm{\bar{a}}
+\end{equation}
+where $\bm{\bar{a}}$ corresponds to the acceleration of the centre-of-mass $G$.
+
+Equation \ref{eqn:generalnewton} is the generalised form of Newton's second law of motion. Each component in a Cartesian system may be treated independently (eg, $\sum F_x = m \bar{a}_x$ etc). The resultant external force $\sum\bm{F}$ will have the same direction as the acceleration of the system $\bm{\bar{a}}$ at that instant of time, however the resultant external force does not necessarily pass through the centre-of-mass (usually it does not).
+
+
 \subsection*{Challenge}
 1. $\bm{\com{r}}$, $\dot{\bm{\com{r}}}$ and $\ddot{\bm{\com{r}}}$ of Question 4/1.
 
-2. Question 4/4
+2. Question 4/4. Note that the question contains units of \si{lb} and \si{ft/sec^2}. Replace these units by \si{kg} and \si{m/s^2} respectively, directly substituting the words and without proper mathematical conversion, so that the weight of Monkey $A$ becomes \SI{20}{kg} instead of \SI{20}{lb}, and it is descending the rope with an acceleration of \SI{5}{m/s^2} instead of \SI{5}{ft/s^2}.
 
 \subsection*{Solution}
 1. Given in book.
@@ -31,7 +81,7 @@
 Question 4/5. Determine the \emph{magnitude} of the acceleration.
 
 \subsection*{Solution}
-Given in book.
+\SI{4}{m/s^2}
 
 
 
@@ -73,7 +123,7 @@ Question 4/13, but change the force to a \SI{10}{N} force and the mass of each b
 
 
 
-
+\iffalse
 \newpage
 \section{Cross-product}
 
@@ -120,9 +170,24 @@ Given in book.
 \end{itemize}
 
 \subsection*{Challenges}
-Question 4/16
+Question 4/15
 
-If you have difficulty, consider doing question 4/15 first (optional).
+\subsection*{Solutions}
+Given in book.
+
+
+
+
+\newpage
+\section{Rotation III}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book section 4/4
+\end{itemize}
+
+\subsection*{Challenges}
+Question 4/16
 
 \subsection*{Solutions}
 The required time should be \SI{2.72}{s}
@@ -131,7 +196,7 @@ The required time should be \SI{2.72}{s}
 
 
 \newpage
-\section{Rotation III}
+\section{Rotation IV}
 
 \subsection*{Resources}
 \begin{itemize}
@@ -151,54 +216,54 @@ $\dot{\bm{H}}_G = -8 \hat{i} - 12 \hat{j} + 0 \hat{k}$ \SI{}{Nm}
 
 
 
+%\newpage
+%\section{Conservation of momentum}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/5
+%\end{itemize}
+%
+%\subsection*{Challenges}
+%1. In Question 4/17, at what point does the vehicle stop accelerating? % NT: Change this to calculating velocity first. Add a question about conservation of KE and PE before as well
+%
+%2. Solve Question 4/17
+%
+%3. Question 4/18
+%
+%\subsection*{Solutions}
+%1. Please write your answer and compare with your partner in class
+%
+%2. Given in book
+%
+%3. 0.21 m/s
+
+
+
+
+%\newpage
+%\section{Conservation of momentum vs energy}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/5
+%\end{itemize}
+%
+%\subsection*{Challenges}
+%1. Solve Question 4/19
+%
+%2. Why is energy not conserved here? Where did the energy go? Under what conditions is momentum conserved, and under what conditions is energy conserved?
+%
+%\subsection*{Solutions}
+%1. Given in book
+%
+%2. Please write your answers and compare with your partner in class.
+
+
+
+
 \newpage
-\section{Conservation of momentum}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/5
-\end{itemize}
-
-\subsection*{Challenges}
-1. In Question 4/17, at what point does the vehicle stop accelerating? % NT: Change this to calculating velocity first. Add a question about conservation of KE and PE before as well
-
-2. Solve Question 4/17
-
-3. Question 4/18
-
-\subsection*{Solutions}
-1. Please write your answer and compare with your partner in class
-
-2. Given in book
-
-3. 0.21 m/s
-
-
-
-
-\newpage
-\section{Conservation of momentum vs energy}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/5
-\end{itemize}
-
-\subsection*{Challenges}
-1. Solve Question 4/19
-
-2. Why is energy not conserved here? Where did the energy go? Under what conditions is momentum conserved, and under what conditions is energy conserved?
-
-\subsection*{Solutions}
-1. Given in book
-
-2. Please write your answers and compare with your partner in class.
-
-
-
-
-\newpage
-\section{Combined problems I}
+\section{Energy and Rotation I}
 
 \subsection*{Resources}
 \begin{itemize}
@@ -217,7 +282,7 @@ The question states that an impulse is imparted ``over a negligibly short period
 
 
 \newpage
-\section{Combined problems II}
+\section{Energy and Rotation II}
 
 \subsection*{Resources}
 \begin{itemize}
@@ -239,153 +304,153 @@ $\dot{\theta}=$ \SI{222}{\radian\per\second}.
 
 
 
-\newpage
-\section{In-plane flow}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Derive equation 4/19 in the book from equation 4/19a.
-
-
-
-
-\newpage
-\section{Force on vane}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Show your working for sample problem 4/5 (a) and (b)
+%\newpage
+%\section{In-plane flow}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Derive equation 4/19 in the book from equation 4/19a.
 
 
 
 
-\newpage
-\section{Power and a vane}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Considering sample problem 4/6,
-
-1. Explain in words what is meant by ``power by action of the fluid''.
-
-2. The power is defined here by measuring the force applied to move an object at a constant velocity. If force creates acceleration ($F=ma$), how can the velocity be constant?
-
-3. Work through and solve the sample problem.
-
-\subsection*{Solutions}
-Please compare your solutions with your partner. You may be asked to present your solutions to the class.
+%\newpage
+%\section{Force on vane}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Show your working for sample problem 4/5 (a) and (b)
 
 
 
 
-\newpage
-\section{Balancing forces: Jet aeroplane example}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Work through sample problem 4/8 to obtain the equation of motion of the system as given in the book ($m'_gu-m'_av=mg\sin{\theta}+D$).
-
-
-
-
-\newpage
-\section{Balancing forces: Jet aeroplane}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Answer question 4/33.
-
-\subsection*{Solution}
-Given in book.
-
-
-
-\newpage
-\section{Balancing forces: Fire tug}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Answer question 4/37.
-
-\subsection*{Solution}
-Given in book.
+%\newpage
+%\section{Power and a vane}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Considering sample problem 4/6,
+%
+%1. Explain in words what is meant by ``power by action of the fluid''.
+%
+%2. The power is defined here by measuring the force applied to move an object at a constant velocity. If force creates acceleration ($F=ma$), how can the velocity be constant?
+%
+%3. Work through and solve the sample problem.
+%
+%\subsection*{Solutions}
+%Please compare your solutions with your partner. You may be asked to present your solutions to the class.
 
 
 
 
-\newpage
-\section{Balancing ball on a water stream}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Answer question 4/42. Take note about the conservation of energy in the jet stream, and the fact that the jet stream remains intact. You can assume that the water stream is fully deflected horizontally when it hits the ball.
-
-\subsection*{Solution}
-\SI{4.8}{\meter}
+%\newpage
+%\section{Balancing forces: Jet aeroplane example}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Work through sample problem 4/8 to obtain the equation of motion of the system as given in the book ($m'_gu-m'_av=mg\sin{\theta}+D$).
 
 
 
 
-\newpage
-\section{Pressure I}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-\includegraphics[width=4cm]{dice}
-
-A typical die has a side length of \SI{1.4}{\cm} and weighs \SI{2.8}{\gram}. Consider the die at rest on a desk. Estimate the pressure on the bottom of the die due to the desk.
-
-\subsection*{Solution}
-\SI{140}{\pascal}
+%\newpage
+%\section{Balancing forces: Jet aeroplane}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Answer question 4/33.
+%
+%\subsection*{Solution}
+%Given in book.
 
 
 
+%\newpage
+%\section{Balancing forces: Fire tug}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Answer question 4/37.
+%
+%\subsection*{Solution}
+%Given in book.
 
-\newpage
-\section{Pressure II}
 
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
 
-\subsection*{Challenge}
-Answer question 4/50
 
-\subsection*{Solution}
-\SI{1035}{\pascal}
+%\newpage
+%\section{Balancing ball on a water stream}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Answer question 4/42. Take note about the conservation of energy in the jet stream, and the fact that the jet stream remains intact. You can assume that the water stream is fully deflected horizontally when it hits the ball.
+%
+%\subsection*{Solution}
+%\SI{4.8}{\meter}
+
+
+
+
+%\newpage
+%\section{Pressure I}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%\includegraphics[width=4cm]{dice}
+%
+%A typical die has a side length of \SI{1.4}{\cm} and weighs \SI{2.8}{\gram}. Consider the die at rest on a desk. Estimate the pressure on the bottom of the die due to the desk.
+%
+%\subsection*{Solution}
+%\SI{140}{\pascal}
+
+
+
+
+%\newpage
+%\section{Pressure II}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Answer question 4/50
+%
+%\subsection*{Solution}
+%\SI{1035}{\pascal}
 
 
 
@@ -413,19 +478,19 @@ Answer question 4/50
 
 
 
-\newpage
-\section{Power and a Helicopter}
-
-\subsection*{Resources}
-\begin{itemize}
-    \item Book section 4/6
-\end{itemize}
-
-\subsection*{Challenge}
-Answer question 4/59
-
-\subsection*{Solutions}
-Given in book
+%\newpage
+%\section{Power and a Helicopter}
+%
+%\subsection*{Resources}
+%\begin{itemize}
+%    \item Book section 4/6
+%\end{itemize}
+%
+%\subsection*{Challenge}
+%Answer question 4/59
+%
+%\subsection*{Solutions}
+%Given in book
 
 
 
@@ -459,8 +524,11 @@ Given in book
 Consider rocket thrust where exhaust is emitted at a speed of \SI{220}{\meter\per\second}. The force on the rocket due to the thrust alone is \SI{400}{\newton}. Calculate (a) the mass flow rate $m'$ and (b) the time-rate increase of the mass of the rocket $\dot{m}$.
 
 \subsection*{Solutions}
-(a) \hash{a}{300026} \SI{}{\kg\per\second} \\
-(b) \hash{b}{a2fb8f} \SI{}{\kg\per\second}
+(a)\\
+\soltwodp{a}{b54e89} (\SI{}{\kg\per\second})
+
+(b)\\
+\soltwodp{b}{6a83d8} (\SI{}{\kg\per\second})
 
 
 
@@ -644,4 +712,5 @@ Consider a chain hanging over the edge of a block of height $h$.  The chain has 
 \includegraphics[height=5cm]{sliding_chain}
 
 \subsection*{Solution}
-To check your answer, determine the acceraleration for a height of \SI{5}{\meter} and chain length of \SI{10}{\meter}, when the chain has slid \SI{2}{m}. You should obtain an acceleration of \SI{6.13}{\meter\per\square\second}
+To check your answer, determine the acceleration for a height of \SI{5}{\meter} and chain length of \SI{10}{\meter}, when the chain has slid \SI{2}{m}. You should obtain an acceleration of \SI{6.13}{\meter\per\square\second}
+\fi

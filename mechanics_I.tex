@@ -18,20 +18,22 @@
 \usepackage{booktabs} % Merge cells with multicolumn
 \usepackage{bm} % Bold-maths \bm command
 
+\newcommand{\courseyear}{2018 }
 \newcommand{\disctime}{13:00 to 14:30 }
 \newcommand{\discdays}{Mondays }
 \newcommand{\discroom}{W4-766}
 %\newcommand{\discexam}{10th February 2017}
-\newcommand{\course}{Mechanics }
-\newcommand{\coursenospace}{Mechanics}
+\newcommand{\course}{Mechanics I }
+\newcommand{\coursenospace}{Mechanics I}
 \newcommand{\courseurl}{mechanics}
 \newcommand{\nensei}{2nd}
 
 \newcommand{\lap}[1]{\mathcal{L}\{#1\}}
 
 \newcommand{\six}[1]{\SI[parse-numbers=false]{X}{#1}}
-\newcommand{\hash}[2]{MD5(#1\_X) = #2\ldots}
 \newcommand{\com}[1]{\overline{#1}}
+\newcommand{\hash}[2]{MD5(#1\_X) = #2\ldots}
+\newcommand{\soltwodp}[2]{X = Your solution\\Form: Decimal to 2 decimal places.\\Place the indicated letter in front of the number.\\Example: aX where $X=46.00$ is entered as \href{http://www.wolframalpha.com/input/?i=md5+hash+of+\%22a46.00\%22}{a46.00}\\\\Hash of {#1}X = {#2}}
 
 \graphicspath{{Images/}}
 
@@ -42,9 +44,9 @@
         \vspace*{1cm}
 
         \Huge
-        \textbf{Mechanics}
+        \textbf{Mechanics I}
 
-        Spring 2017
+        Spring quarter 2018
 
         \vspace{1.5cm}
         \Large
@@ -59,7 +61,7 @@
         \url{http://www.jamescannon.net/teaching/\courseurl}\\
         \vspace{0.3cm}
         \small
-        \url{http://raw.githubusercontent.com/NanoScaleDesign/Mechanics/master/mechanics.pdf}
+        \url{http://raw.githubusercontent.com/NanoScaleDesign/Mechanics/master/mechanics_I.pdf}
         \vspace{0.5cm}
 
         License: \emph{CC BY-NC 4.0}.
@@ -73,19 +75,21 @@
 
 \chapter{Course information}
 \newpage
-\input{instructions}
-\input{coursework}
+\input{instructions_I}
+%\input{coursework}
 \input{timetable}
 \input{hash}
 
+\chapter{Hash practise}
+\include{hashpractise}
 \chapter{Kinetics of systems of particles}
 \input{particlesystems}
 
-\chapter{3D dynamics of rigid bodies}
-\input{3ddynamics}
+%\chapter{3D dynamics of rigid bodies}
+%\input{3ddynamics}
 
-\appendix 
-\chapter{Mid-term exam}
-\input{mid_term}
+%\appendix 
+%\chapter{Mid-term exam}
+%\input{mid_term}
 
 \end{document}

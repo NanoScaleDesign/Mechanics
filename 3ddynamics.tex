@@ -191,7 +191,7 @@ Question 7/4
 
 
 
-
+\iffalse
 \newpage
 \section{Unit vector of a rotation axis}
 
@@ -238,12 +238,11 @@ Work through sample problem 7/2.
 \emph{Correction to book: Figure 7/9 should read $\bm{\alpha} = \bm{\dot{\omega}} = \bm{\Omega} \bm{\times} \bm{\omega}$ (not $\bm{\Omega} \bm{\times} \bm{r}$)}
 
 \subsection*{Challenge}
-Work through sample problem 7/1, parts (a) and (b) only.
+Work through sample problem 7/1
 
 
 
 
-% NT: Add something about LH and RH systems
 \newpage
 \section{Simultaneous rotation III}
 
@@ -259,9 +258,9 @@ Complete question 7/12
 
 
 \subsection*{Solution}
-Velocity: $\frac{\pi}{8}(-4 \hat{i} - 6 \hat{j} + 3 \hat{k})$ \si{\meter\per\second}
+Velocity: $\frac{\pi}{8}(-4 \hat{i} + 6 \hat{j} - 3 \hat{k})$ \si{\meter\per\second}
 
-Acceleration: $\frac{-\pi^2}{8}(25 \hat{j} + 18 \hat{k})$ \si{\meter\per\square\second}
+Acceleration: $\frac{\pi^2}{8}(-25 \hat{j} - 18 \hat{k})$ \si{\meter\per\square\second}
 
 
 
@@ -275,29 +274,23 @@ Acceleration: $\frac{-\pi^2}{8}(25 \hat{j} + 18 \hat{k})$ \si{\meter\per\square\
 \end{itemize}
 
 \subsection*{Comment}
-A vector $\bm{r}$ may be split into its magnitude and scaler components like $\bm{r} = r_i \bm{\hat{i}} + r_j \bm{\hat{j}} + r_k \bm{\hat{k}}$. For fixed co-ordinate systems, the direction of ($\bm{\hat{i}}$, $\bm{\hat{j}}$, $\bm{\hat{k}}$) does not vary with time, so the derivatives of the unit vectors are zero. For a rotating co-ordinate system however, the derivative chain rule must be used in order to take account of the changing directions of the unit vectors.
+A vector $\bm{r}$ may be split into its magnitude and scaler components like $\bm{r} = r_i \bm{\hat{i}} + r_j \bm{\hat{j}} + r_k \bm{\hat{k}}$. For fixed co-ordinate systems, the direction of ($\bm{\hat{i}}$, $\bm{\hat{j}}$, $\bm{\hat{k}}$) does not vary with time, so the velocities of the unit vectors are zero. For a rotating co-ordinate system however, the derivative chain rule must be used in order to obtain net velocities in order to take account of the changing directions of the unit vectors.
 
 \subsection*{Challenge}
-Consider a disk that is initially flat in the x-y plane. The z-axis can be considered to point perpendicularly up from the centre of the disk. The disk then starts spinning with angular velocity depending on time $t$:
-\begin{equation}
-    \bm{\omega} = \omega_i Sin(2 \pi t) \bm{\hat{i}} + \omega_j Cos(2 \pi t) \bm{\hat{j}} + \omega_k t \bm{\hat{k}}
-\end{equation}
-
-You can consider the $\bm{\hat{i}}$ and $\bm{\hat{j}}$ axes to be rotating with the disk and the $\bm{\hat{k}}$ vector to always point perpendicular to the plane of the disk. 
-
-Derive an expression for the angular acceleration $\bm{\dot{\omega}}$ of the disk as a function of time.
+Consider a disk spinning with angular momentum $\omega$ which itself is rotating about an axis with angular momentum $B \Omega$.
+If the angular momentum $\omega$ is increasing at a rate of A \si{\radian\per\second}, determine the net angular acceleration.
+It will be helpful to assume that the axes rotate with angular velocity $\Omega$.
 
 
 \subsection*{Solution}
 To check your answer, substitute the following values into your final equation:
-$t=1$\\
-$\omega_i=10$
-$\omega_j=3$
-$\omega_k=2$
+$t=1$,
+$\omega_i=10$,
+$\omega_j=3$ and
+$\omega_k=2$.
 
-and you should obtain the final result
-
-$\bm{\dot{\omega}} = (20 \pi - 6) \bm{\hat{i}} + 2 \bm{\hat{k}}$
+Your result should be consistent with
+$\bm{\dot{\omega}} = 20 \pi \bm{\hat{i}} + 2 \bm{\hat{k}}$.
 
 
 
@@ -440,3 +433,4 @@ Answer question 7/43.
 
 \subsection*{Solution}
 Given in book.
+\fi

@@ -337,7 +337,7 @@ The solution is given in the book and you should obtain the same answer in both 
 \end{itemize}
 
 \subsection*{Challenge}
-Consider a rotating rigid body with angular velocity $\omega=\hat{k}$. Two points, ``A'' and ``B'' are chosen on the rigid body. The book describes how it is possible to calculate the velocity of point ``A'' given the velocity of point ``B''. Show that the velocity of point ``A'' relative to point ``B'' is always the same, irrespective of the choice of location of point ``B''. You may show this by demonstrating consistency for the 3 cases below.
+Consider a rotating rigid body with angular velocity $\omega=\hat{k}$. Two points, ``A'' and ``B'' are chosen on the rigid body. The book describes how it is possible to calculate the velocity of point ``A'' given a set of axes (xyz) with the origin at point ``B''. Thus from the perspective of an observer on xyz, point ``A'' is rotating about point ``B''. Show that the velocity of point ``A'' relative to point ``B'' is always the same, irrespective of the choice of location of point ``B''. You may show this by demonstrating consistency for the 3 cases below.
 
 \includegraphics[width=15cm]{rigid_body_vectors}
 
@@ -350,7 +350,7 @@ You should be able to show that all 3 cases will result in the same value of $v_
 
 
 
-\iffalse
+
 \newpage
 \section{Crank-style problem}
 
@@ -398,7 +398,7 @@ Considering a vector $\bm{a} = \hat{k}$ and a vector $\bm{b} = \hat{i}$, show th
 \end{itemize}
 
 \subsection*{Challenge}
-Calculate the linear acceleration of points $A$ and $B$ in the previous sample problem.
+Calculate the linear acceleration of points $A$ and $B$ in sample problem 7/4.
 
 \section*{Solution}
 $\bm{a}_A = 1800 \bm{\hat{i}} + 50 \dot{\omega_2} \bm{\hat{j}}$ \si{\mm\per\square\second}
@@ -441,7 +441,7 @@ $-0.64 \hat{i} - 4.87 \hat{j} + 1.27 \hat{k}$ \si{\meter\per\second}
 
 
 
-
+\iffalse
 \newpage
 \section{3D velocity and acceleration calculation}
 
@@ -455,6 +455,20 @@ Answer question 7/43.
 
 \subsection*{Solution}
 Given in book.
+
+
+
+
+\newpage
+\section{Inertia}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book appendix B
+\end{itemize}
+
+\subsection*{Challenge}
+Write a paragraph describing what inertia $I$ is, explain its mathematical derivation.
 
 
 
@@ -501,7 +515,10 @@ Work through sample problem B/2
 Determine the area moment of inertia about the x-axis $I_x$ of a rectangle which is centred on the x-y axes with x and y lengths ``X'' and ``Y'' respectively.
 
 \subsection*{Solution}
-\frac{XY^3}{12}
+You should find that your answer is consistent with $I_x = 2$ for $X=3$ and $Y=2$.
+%\begin{equation}
+%    \frac{XY^3}{12}
+%\end{equation}
 
 
 
@@ -520,4 +537,42 @@ Work through sample problem B/3
 
 
 
+\newpage
+\section{Inertia: A cone}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book appendix B
+\end{itemize}
+
+\subsection*{Challenge}
+Answer question B/4
+
+
+
+
+\newpage
+\section{Inertia: A rod}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book appendix B
+\end{itemize}
+
+\subsection*{Challenge}
+Answer question B/3
+
+
+
+
+\newpage
+\section{Inertia: A rod and a disk}
+
+\subsection*{Resources}
+\begin{itemize}
+    \item Book appendix B
+\end{itemize}
+
+\subsection*{Challenge}
+Answer question B/18. Please fully derive your answer, except you may use the fact that $I_{xx}$ for each rod is $m L^2/6$.
 \fi
